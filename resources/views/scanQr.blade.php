@@ -212,8 +212,8 @@
             btnLogOutPetugas.addEventListener('click', async () => {
                 try {
                     await $.ajax({
-                        url: "/logout/petugas", // Sesuai dengan yang ada di web.php kamu
-                        method: "GET",          // Sesuai dengan Route::get di web.php kamu
+                        url: "/logout/petugas",
+                        method: "GET",
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         },
